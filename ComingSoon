@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOAH - Realizing a Zero Emission Society</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* ご指定の背景画像を適用 */
+        .hero-background {
+            background-image: url('スクリーンショット 2025-10-17 6.58.51.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* 背景を固定 */
+        }
+        /* グラスエフェクトを強化 */
+        .glass-card {
+            background: rgba(25, 25, 40, 0.5); /* 少し濃いめの半透明背景 */
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px); /* Safari対応 */
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 1.5rem; /* 24px */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* 影を追加して立体感を強調 */
+        }
+        /* テキストのグロー効果 */
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 25px rgba(88, 155, 255, 0.3);
+        }
+        /* ロゴのドロップシャドウ */
+        .logo-shadow {
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.7));
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <div class="relative min-h-screen overflow-x-hidden hero-background">
+        <!-- 背景の上に暗いオーバーレイを重ねて文字の可読性を確保 -->
+        <div class="absolute inset-0 bg-black/60"></div>
+        
+        <div class="container mx-auto px-6 py-8 relative z-10">
+            
+            <!-- ヘッダー / ナビゲーション -->
+            <header>
+                <nav class="flex items-center justify-between">
+                    <!-- ロゴ -->
+                    <div>
+                        <img src="ロゴ横　白抜.png" alt="NOAH TECHNOLOGY Logo" class="h-7 logo-shadow">
+                    </div>
+                    
+                    <!-- ナビゲーションリンク -->
+                    <div class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-300">
+                        <a href="#" class="hover:text-white transition-colors">Noah Charge</a>
+                        <a href="#" class="hover:text-white transition-colors">Noah Mobility</a>
+                        <a href="#" class="hover:text-white transition-colors">Company</a>
+                    </div>
+                    
+                    <!-- モバイルメニューボタン -->
+                    <div class="md:hidden">
+                        <button class="text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- メインのヒーローセクション -->
+            <main class="mt-24 md:mt-32">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    
+                    <!-- 左側: 回路図グラフィック -->
+                    <div class="hidden md:flex justify-center items-center logo-shadow">
+                         <svg width="150" height="200" viewBox="0 0 150 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M120 40H80" stroke="#34D399" stroke-width="2" stroke-opacity="0.6"/>
+                            <circle cx="130" cy="40" r="4" stroke="#34D399" stroke-width="1.5" stroke-opacity="0.8"/>
+                            <path d="M120 60H70" stroke="#34D399" stroke-width="2" stroke-opacity="0.6"/>
+                             <circle cx="130" cy="60" r="4" stroke="#34D399" stroke-width="1.5" stroke-opacity="0.8"/>
+                            <path d="M120 80H60" stroke="#34D399" stroke-width="2" stroke-opacity="0.6"/>
+                             <circle cx="130" cy="80" r="4" stroke="#34D399" stroke-width="1.5" stroke-opacity="0.8"/>
+                            <path d="M120 100H50" stroke="#34D399" stroke-width="2" stroke-opacity="0.6"/>
+                             <circle cx="130" cy="100" r="4" stroke="#34D399" stroke-width="1.5" stroke-opacity="0.8"/>
+                            <path d="M120 120H60" stroke="#34D399" stroke-width="2" stroke-opacity="0.6"/>
+                             <circle cx="130" cy="120" r="4" stroke="#34D399" stroke-width="1.5" stroke-opacity="0.8"/>
+                            <path d="M120 140H70" stroke="#34D399" stroke-width="2" stroke-opacity="0.6"/>
+                             <circle cx="130" cy="140" r="4" stroke="#34D399" stroke-width="1.5" stroke-opacity="0.8"/>
+                            <path d="M120 160H80" stroke="#34D399" stroke-width="2" stroke-opacity="0.6"/>
+                             <circle cx="130" cy="160" r="4" stroke="#34D399" stroke-width="1.5" stroke-opacity="0.8"/>
+                            <rect x="20" y="20" width="20" height="160" stroke="#34D399" stroke-width="2" stroke-opacity="0.4" rx="4"/>
+                        </svg>
+                    </div>
+
+                    <!-- 中央: 見出し -->
+                    <div class="text-center md:text-left">
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tighter text-glow">
+                            Realizing a<br>
+                            Zero Emission<br>
+                            Society
+                        </h1>
+                        <p class="mt-6 text-2xl md:text-3xl text-gray-300 tracking-widest font-light animate-pulse">
+                            WEB SITE COMING SOON
+                        </p>
+                    </div>
+                    
+                    <!-- 右側: 縦型ロゴ -->
+                    <div class="hidden md:flex justify-center items-center logo-shadow">
+                        <img src="ロゴ縦.png" alt="NOAH TECHNOLOGY Vertical Logo" class="h-48 object-contain">
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- ロゴセクション -->
+        <section class="relative z-10 container mx-auto px-6 py-20 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center glass-card p-8 md:p-12">
+                
+                <!-- Noah Charge -->
+                <div class="text-center">
+                    <img src="CHARGE　LOGO.png" alt="Noah Charge Logo" class="mx-auto h-24 object-contain logo-shadow transition-transform duration-300 hover:scale-105">
+                </div>
+
+                <!-- Noah Mobility -->
+                <div class="text-center">
+                    <img src="MobilityLOGO.png" alt="Noah Mobility Logo" class="mx-auto h-24 object-contain logo-shadow transition-transform duration-300 hover:scale-105">
+                </div>
+                
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
